@@ -1,7 +1,15 @@
 function createTable() {
     //Write your code here
 	let rows = prompt("Input number of rows");
+	if(rows<2){
+		alert("please enter value >=2");
+		return;
+	}
 	let columns= prompt("input number of columns");
+	if(columns<3){
+		alert("please enter value >=2");
+		return;
+	}
 
 	let myTable = document.getElementById('myTable');
 
